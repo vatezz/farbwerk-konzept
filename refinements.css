@@ -1,0 +1,58 @@
+/* Final refinement: preserve the editorial system while tightening rhythm and form detail. */
+:root {
+  --muted: #56544f;
+  --header-offset: 104px;
+}
+
+.hero {
+  padding: clamp(44px, 6vw, 84px) 0 clamp(72px, 8.5vw, 120px);
+}
+
+.hero-grid { gap: clamp(30px, 6vw, 92px); }
+.section { scroll-margin-top: var(--header-offset); }
+
+.process ol { margin-top: 3.35rem; }
+.process li { padding-top: 1.7rem; }
+.process h3 { margin-top: 1.6rem; }
+.process p { font-size: .95rem; }
+
+.contact aside p { font-size: .9rem; }
+
+form {
+  gap: 1.45rem 1.15rem;
+  padding: clamp(1.55rem, 3vw, 2.5rem);
+  border: 1px solid rgba(220, 214, 203, .75);
+  box-shadow: 0 12px 32px rgba(28, 28, 26, .045);
+}
+
+.field { gap: .55rem; }
+label { font-size: .86rem; }
+
+input, select, textarea {
+  min-height: 52px;
+  padding: .85rem .95rem;
+  background: #fff;
+  transition: border-color .18s, box-shadow .18s, background .18s;
+}
+
+input:hover, select:hover, textarea:hover {
+  border-color: #bcb3a5;
+  background: #fffdfa;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--orange);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(232, 93, 42, .14);
+  outline: 0;
+}
+
+textarea { min-height: 136px; }
+.checkbox { font-size: .84rem; line-height: 1.48; }
+.form-success p { font-size: .92rem; }
+.footer-note { font-size: .81rem; }
+
+@media (max-width: 800px) {
+  :root { --header-offset: 90px; }
+  .process ol { margin-top: 2.5rem; }
+}
